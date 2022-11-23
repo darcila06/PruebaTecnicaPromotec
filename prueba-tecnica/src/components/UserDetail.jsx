@@ -4,7 +4,11 @@ import useFetch from "../hooks/useFetch";
 import { useParams } from "react-router-dom";
 import { Link } from 'react-router-dom';
 
+
+
 const UserDetail = () => {
+
+    //Se ejecuta el hook useFetch para obtener los datos del usuario pasado por parametros y se guarda en response
 
     const params = useParams();
     let { response } = useFetch({
@@ -12,11 +16,15 @@ const UserDetail = () => {
         method: "get",
         url: "/user/" + params.userId,
     });
-    console.log(response)
+
+    /* Se maqueta el form con los datos obtenidos en la response, se inactivan los inputs para que no se pueda
+        mmodificar los datos de la base, solo se puedan ver. Los botones de guardar o cancelar nos devuelven 
+        a la pantalla de inicio
+    */
 
     return (
-
         <div className="container">
+        
             {!!response && (
                 <form>
                     <fieldset disabled>

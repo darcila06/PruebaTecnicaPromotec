@@ -1,6 +1,12 @@
 import { useState, useEffect } from "react";
 import { backendApi } from "./axiosBase";
 
+/**
+ * Se crea el hook useFetch con los atributos necesarios para poder realizar cualquier
+ * tipo de peticion a la API suministada, se retorna la respuesta de la api y las
+ * variables de estado de error y isLoading
+ */
+
 export default function useFetch({
   api = backendApi,
   method = 'get',

@@ -10,6 +10,7 @@ import UserCreate from './components/UserCreate';
 const App = () => {
   return (
     <div>
+      {/* Creaciones de las rutas para el sitio web */}
       <Layout>
         <Routes>
             <Route path='/' element={<Main/>}/>

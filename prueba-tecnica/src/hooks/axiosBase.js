@@ -1,5 +1,6 @@
 import axios from "axios";
 
+// Se crea una herramienta axios para poder utilizarla en el use Fetchs
 export const backendApi = axios.create({
     baseURL: "https://dummyapi.io/data/v1/",
     headers: {
@@ -7,5 +8,6 @@ export const backendApi = axios.create({
     }
 });
 
+// Se crea la variable de la url base de la API
 const baseURL = "https://dummyapi.io/data/v1/";
 export default baseURL

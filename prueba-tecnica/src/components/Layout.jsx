@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './Layout/Header';
 import Footer from './Layout/Footer';
 
-// Layout component
+// Componente Layout para separar Main, Header y Footer del sitio Web
 const Layout = ({ children }) => {
   return (
     <>

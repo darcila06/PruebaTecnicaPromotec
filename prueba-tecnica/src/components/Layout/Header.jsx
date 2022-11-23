@@ -1,6 +1,7 @@
 import React from 'react'
 
-const Footer = () => {
+const Header = () => {
+  // Crea el header del sitio con titulo Prueba tecnica
   return (
     <header>
       <nav className="navbar navbar-light bg-light">
@@ -10,4 +11,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default Header

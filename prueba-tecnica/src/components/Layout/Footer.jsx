@@ -1,9 +1,10 @@
 import React from 'react'
 
 const Footer = () => {
-    return (
+  //Retorna el footer de la pagina  
+  return (
       <footer> 
-          <p >©2021 Digital Booking</p>
+          <p >©2021 My Company. todos los derechos son reservados</p>
           <div className='md-screen'>
               <ul>
               </ul>
